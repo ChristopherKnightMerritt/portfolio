@@ -1,23 +1,34 @@
-import React from 'react'
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+import SlackLackey from '../../assets/merritt.jpg'
+import Panamapping from '../../assets/ChrisM-01.png'
 
-class Projects extends React.Component {
-  render() {
-    return (
-      <div>
-        <section>
-          <img alt='Project Name'/>
-          <h3>Project Name 1</h3>
-          <p>About the project </p>
-        </section>
-        <section>
-          <img alt='Project Name'/>
-          <h3>Project Name 2</h3>
-          <p>About the project </p>
-        </section>
-        <p>down</p>
-      </div>
-    )
-  }
-}
-
-export default Projects
+const images = [SlackLackey, Panamapping]
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query HeadingQuery {
+        site {
+          siteMetadata {
+            item {
+              title
+              description
+              image
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <header>
+        {data.site.siteMetadata.item.map( (i) => 
+          <>
+          <h4>{i.title}</h4>
+          <img src={images[i.image]} /> 
+          <p>{i.description}</p>
+          </>
+        )}
+      </header>
+    )}
+  />
+)
