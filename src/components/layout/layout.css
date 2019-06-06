@@ -1,0 +1,32 @@
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  /* background-color: #111; */
+}
+#navLogo{
+  height: 40px;
+  width: 40px;
+}
+#navbar li {
+  width: 20%;
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+li a:hover {
+  background-color: rgba(32, 55, 158, 0.8);
+  border-radius: 30px;
+}
