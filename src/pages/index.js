@@ -14,17 +14,19 @@ let divStyle = {
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundAttachment: 'fixed',
-  backgroundPosition: 'center'
+  backgroundPosition: 'center',
 }
 
 export default () => (
   <Layout>
     <div style={divStyle}>
+      <div id='main'>
       <Navbar />
-      <div><About /></div>
-      <div><Projects /></div>
-      <div><Contact /></div>
-      <Footer />
+        <div><About /></div>
+        <div><Projects /></div>
+        <div><Contact /></div>
+        <Footer />
+      </div>
     </div>
   </Layout>
 )
