@@ -1,9 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import SlackLackey from '../../assets/merritt.jpg'
-import Panamapping from '../../assets/ChrisM-01.png'
+import Item from '../item/item.js'
 
-const images = [SlackLackey, Panamapping]
 export default () => (
   <StaticQuery
     query={graphql`
@@ -14,21 +12,22 @@ export default () => (
               title
               description
               image
+              link
+              skills
             }
           }
         }
       }
     `}
     render={data => (
-      <header>
+      <>
+      <h2 id='projectTitle'>Projects:</h2>
+      <section id='projectsContainer'>
         {data.site.siteMetadata.item.map( (i) => 
-          <>
-          <h4>{i.title}</h4>
-          <img src={images[i.image]} /> 
-          <p>{i.description}</p>
-          </>
+          <Item data={i}/>
         )}
-      </header>
+      </section>
+      </>
     )}
   />
 )
