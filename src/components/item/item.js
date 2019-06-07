@@ -3,7 +3,7 @@ import Curve from '../../assets/curvelogo.png'
 import DailyPlanIt from '../../assets/dailyplanit.png'
 import SlackLackey from '../../assets/slack-lackey.png'
 import Panamapping from '../../assets/panamapping.png'
-import StationLocation from '../../assets/StationLocation.png'
+import StationLocation from '../../assets/stationlocation.png'
 
 const images = [Panamapping, StationLocation, DailyPlanIt, SlackLackey, Curve]
 
