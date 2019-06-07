@@ -15,11 +15,12 @@ let divStyle = {
   backgroundSize: 'cover',
   backgroundAttachment: 'fixed',
   backgroundPosition: 'center',
+  
 }
 
 export default () => (
   <Layout>
-    <div style={divStyle}>
+    <div id='mainBackground' style={divStyle}>
       <div id='main'>
       <Navbar />
         <div><About /></div>
