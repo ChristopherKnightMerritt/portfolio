@@ -1,6 +1,43 @@
 #main{
   background-color: rgba(46, 44, 44, 0.4);
+  color: white;
 }
+
+/* Navbar styles: */
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  /* background-color: #111; */
+}
+#navLogo{
+  height: 40px;
+  width: 40px;
+}
+#navbar li {
+  width: 20%;
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+li a:hover {
+  background-color: rgba(32, 55, 158, 0.8);
+  border-radius: 60px;
+}
+
+/* About styles */
 
 #mainAbout{
   padding-top: 15em;
@@ -50,36 +87,46 @@ p{
   height:  6em;
 }
 
-/* Navbar styles: */
-#navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: none;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  /* background-color: #111; */
-}
-#navLogo{
-  height: 40px;
-  width: 40px;
-}
-#navbar li {
-  width: 20%;
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
+/* Projects Styles */
+
+#projectTitle{
   text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  border-radius: 30px;
-  transition: 0.3s;
+  margin-bottom: 2em;
 }
-li a:hover {
-  background-color: rgba(32, 55, 158, 0.8);
-  border-radius: 60px;
+
+#projectsContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectCard{
+  border-radius: 2em;
+  background-color: rgba(112, 112, 112, 0.938);
+  max-width: 20em;
+  margin: 2em;
+  padding: 1em;
+  text-align: center;
+}
+.projectCard h4 {
+  padding: 1em;
+  font-size: 2em;
+}
+.projectCard p {
+  line-height: 2em;
+  text-align: left;
+  margin-top: .5em;
+}
+.projectImg{
+  height: 15em;
+  width: 15em;
+  border: 0.5em solid white;
+  border-radius: 3em;
+}
+
+/* Mobile Styles: */
+@media only screen and (max-width: 1000px) {
+  #projectsContainer{
+    /* flex-direction: column; */
+  }
 }
