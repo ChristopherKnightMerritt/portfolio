@@ -15,7 +15,6 @@ class About extends React.Component {
             <p>Full stack JavaScript developer with experience in GIS technologies. Graduate from the University of Redlands</p>
           </section>
         </section>
-        <div id='downIcon'><img id='downImg'src={downIcon}/></div>
         </div>
     )
   }

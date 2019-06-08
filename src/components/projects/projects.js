@@ -20,14 +20,14 @@ export default () => (
       }
     `}
     render={data => (
-      <>
+      <div id='projects'>
       <h2 id='projectTitle'>Projects:</h2>
       <section id='projectsContainer'>
         {data.site.siteMetadata.item.map( (i) => 
           <Item data={i}/>
         )}
       </section>
-      </>
+      </div>
     )}
   />
 )
