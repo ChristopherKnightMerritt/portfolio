@@ -46,9 +46,6 @@ li a:hover {
   background-color: rgba(32, 55, 158, 0.8);
   border-radius: 2em;
 }
-#logoItem:hover{
-
-}
 
 /* About styles */
 
@@ -105,9 +102,13 @@ p{
 
 /* Projects Styles */
 
+#projects{
+  padding-top: 6em;
+}
+
 #projectTitle{
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 #projectsContainer{
@@ -148,7 +149,7 @@ p{
   margin-bottom: .5em;
 }
 
-#contactContainer {
+#contact {
   display: flex;
   flex-direction: column;
   border-radius: 2em;
@@ -157,13 +158,13 @@ p{
   padding: 1em;
 }
 
-#contactContainer img{
+#contact img{
   height: 3em;
   width: 3em;
   transition: 0.3s;
   margin-bottom: 1em;
 }
-#contactContainer img:hover{
+#contact img:hover{
   height: 3.5em;
   width: 3.5em;
   margin-bottom: 0em;
@@ -268,6 +269,12 @@ footer a:visited{
     line-height: 2em;
     text-align: left;
     margin-top: .5em;
+  }
+  li a:hover {
+    background-color: rgba(46, 44, 44, 0);;
+  }
+  li a:active{
+    background-color: rgba(46, 44, 44, 0);
   }
 
 

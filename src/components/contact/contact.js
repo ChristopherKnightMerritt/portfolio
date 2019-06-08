@@ -7,7 +7,7 @@ class Contact extends React.Component {
   render() {
     return (
       <>
-        <div id='contactContainer'>
+        <div id='contact'>
           <h2 id='contactTitle'>Contact Me:</h2>
           <div className='nestContainer'>
             <p>I am currently looking for new opportunities, please reach out if you would like to chat!</p>
