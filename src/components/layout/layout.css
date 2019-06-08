@@ -120,7 +120,8 @@ p{
 
 .projectCard{
   border-radius: 2em;
-  background-color: rgba(112, 112, 112, 0.938);
+  background: rgb(115,112,112);
+  background: linear-gradient(90deg, rgba(115,112,112,1) 0%, rgba(85,75,75,1) 100%);
   max-width: 20em;
   margin: 2em;
   padding: 1em;
@@ -153,7 +154,8 @@ p{
   display: flex;
   flex-direction: column;
   border-radius: 2em;
-  background-color: rgba(112, 112, 112, 0.815);
+  background: rgb(115,112,112);
+  background: linear-gradient(90deg, rgba(115,112,112,1) 0%, rgba(85,75,75,1) 100%);
   margin: 3em;
   padding: 1em;
 }
@@ -187,7 +189,7 @@ p{
 }
 
 footer{
-  background-color:rgba(112, 112, 112, 0.788);
+  background-color: rgba(46, 44, 44, 0.733);
   height:  2em;
   text-align: center;
   padding: 0.5em;
