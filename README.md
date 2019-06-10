@@ -8,6 +8,8 @@
   Chris Merritt, Personal Portfolio
 </h1>
 
+https://www.chriskmerritt.com/
+
 ### Credits:
 
 * Background Image- Jordan Steranka, Unsplash
