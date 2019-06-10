@@ -36,7 +36,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 1em;
   text-decoration: none;
   border-radius: 2em;
   transition: 0.3s;
@@ -58,7 +58,7 @@ li a:hover {
   justify-content: center;
 }
 #picSection{
-  
+  padding-top: 3em;
   order: 2;
 }
 .profilePic{
@@ -67,7 +67,7 @@ li a:hover {
 }
 #textSection{
   color: white;
-  margin: 5em;
+  padding-top: 5em;
   line-height: 5em;
   text-align: center;
 }
@@ -81,6 +81,7 @@ p{
   line-height: 3em;
   font-size: 1.4em;
   max-width: 30em;
+  margin: auto;
 }
 
 /* Projects Styles */
@@ -211,6 +212,7 @@ footer a:visited{
     text-align: center;
   }
   #picSection{
+    padding-top: 0;
     margin: auto;
     order: 1;
   }
@@ -221,6 +223,7 @@ footer a:visited{
   #textSection{
     order: 2;
     margin: 2em;
+    padding-top: 0;
   }
   h1{
     font-size: 3em;
@@ -239,9 +242,6 @@ footer a:visited{
   #projectTitle{
     margin-bottom: 1em;
   }
-  .projectCard{
-
-  }
   .projectImg{
     height: 6em;
     width: 6em;
@@ -255,6 +255,9 @@ footer a:visited{
     line-height: 2em;
     text-align: left;
     margin-top: .5em;
+  }
+  li a {
+    padding: 0.8em;
   }
   li a:hover {
     background-color: rgba(46, 44, 44, 0);;

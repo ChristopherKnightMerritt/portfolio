@@ -33,7 +33,7 @@ const About = (props) => (
           <section id='textSection'>
             <h1>Chris Merritt</h1>
             <h2>Software Developer</h2>
-            <p>Full stack JavaScript developer with experience in GIS technologies. Graduate from the University of Redlands</p>
+            <p>Full stack JavaScript developer with experience in GIS technologies. Graduate from the University of Redlands.</p>
           </section>
         </section>
         </div>
