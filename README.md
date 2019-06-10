@@ -7,10 +7,12 @@
 <h1 align="center">
   Chris Merritt, Personal Portfolio
 </h1>
+<p align="center">https://www.chriskmerritt.com/</p>
+<p align="center">Created with Gatsby.</p>
 
-https://www.chriskmerritt.com/
 
 ### Credits:
 
-* Background Image- Jordan Steranka, Unsplash
-* Logo - Jason Burns
+
+* Background Image - [Jordan Steranka, Unsplash.com](https://unsplash.com/photos/S2uQdHTXbbc)
+* Logo - [Jason Burns](https://www.linkedin.com/in/jasonburns315/)
