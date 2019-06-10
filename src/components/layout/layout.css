@@ -104,8 +104,8 @@ p{
 
 .projectCard{
   border-radius: 2em;
-  background: rgb(115,112,112);
-  background: linear-gradient(90deg, rgba(115,112,112,1) 0%, rgba(85,75,75,1) 100%);
+  background-color: rgba(117, 110, 110, 0.658);
+  box-shadow: 2px 1px 9px black;
   max-width: 20em;
   margin: 2em;
   padding: 1em;
@@ -138,8 +138,8 @@ p{
   display: flex;
   flex-direction: column;
   border-radius: 2em;
-  background: rgb(115,112,112);
-  background: linear-gradient(90deg, rgba(115,112,112,1) 0%, rgba(85,75,75,1) 100%);
+  background-color: rgba(117, 110, 110, 0.658);
+  box-shadow: 2px 1px 9px black;
   margin: 3em;
   padding: 1em;
 }

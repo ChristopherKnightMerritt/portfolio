@@ -36,6 +36,7 @@ export default (props) => (
       fluid={imageData}
       id='mainBackground'
       style={divStyle}
+      alt='Mt Rainier at sunset'
       backgroundColor={`#040e18`}
       >
     <Layout>
