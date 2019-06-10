@@ -12,7 +12,7 @@ class Item extends React.Component {
     return (
       <div className='projectCard'>
         <a href={this.props.data.link}>
-          <img className='projectImg' src={images[this.props.data.image]}/>
+          <img className='projectImg' alt={this.props.data.title} src={images[this.props.data.image]}/>
         </a>
         <h4>{this.props.data.title}</h4>
         <p>{this.props.data.description}</p>
