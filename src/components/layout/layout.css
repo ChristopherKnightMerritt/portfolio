@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  
+  z-index: 999;
   top: 0;
   position: fixed;
   width: 100%;
@@ -59,9 +59,10 @@ li a:hover {
   justify-content: center;
 }
 #picSection{
+  
   order: 2;
 }
-#profilePic{
+.profilePic{
   border: 4px solid white;
   border-radius: 50%;
   height: 20em;
@@ -83,21 +84,6 @@ p{
   line-height: 3em;
   font-size: 1.4em;
   max-width: 30em;
-}
-#downIcon{
-  text-align: center;
-  color: white; 
-}
-#downImg{
-  height: 5em;
-  transition: 0.3s;
-  filter: invert(100%);
-  margin-bottom: 1em;
-}
-#downImg:hover{
-  height:  6em;
-  margin-bottom: 0em;
-
 }
 
 /* Projects Styles */
@@ -215,8 +201,8 @@ footer a:visited{
     background-color: rgba(46, 44, 44, 0.637);
   }
   #mainBackground{
-    background-color: rgb(250, 250, 250);
     background-image: none;
+    background-color: rgb(250, 250, 250);
     overflow-x: hidden;
   }
   #mainAbout{
@@ -228,9 +214,10 @@ footer a:visited{
     text-align: center;
   }
   #picSection{
+    margin: auto;
     order: 1;
   }
-  #profilePic{
+  .profilePic{
     height: 10em;
     width: 10em;
   }
