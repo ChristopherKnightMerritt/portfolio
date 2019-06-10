@@ -1,13 +1,30 @@
 import React from 'react'
-import headshot from '../../assets/ChrisB&W.png'
-import downIcon from '../../assets/cheveron-down.svg'
-class About extends React.Component {
-  render() {
+// import headshot from '../../assets/chrisSmaller.png'
+
+import { graphql, StaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+
+
+const About = (props) => (
+  <StaticQuery query={graphql`
+  query{
+    profileImg: file(relativePath: { eq: "chrisSmaller.png" }){
+      childImageSharp {
+        fluid(maxWidth: 1000){
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+  `}
+  render={data => {
+    const imageData = data.profileImg.childImageSharp.fluid
+  // render() {
     return (
       <div id='mainAbout'>
         <section className='aboutSection'>
           <section id='picSection'>
-            <img id='profilePic' src={headshot} alt='Headshot'/>
+            <Img className='profilePic' fluid={imageData} />
           </section>
           <section id='textSection'>
             <h1>Chris Merritt</h1>
@@ -16,8 +33,9 @@ class About extends React.Component {
           </section>
         </section>
         </div>
-    )
-  }
-}
+     )
+    }}
+    />
+)
 
 export default About

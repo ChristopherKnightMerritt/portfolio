@@ -5,12 +5,11 @@ import Footer from '../components/footer/footer.js'
 import About from '../components/about/about.js'
 import Projects from '../components/projects/projects.js'
 import Contact from '../components/contact/contact.js'
-
-import backgroundImg from '../assets/rainier.jpg'
+import { graphql, StaticQuery } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 
 //Todo: Fixed image on mobile
 let divStyle = {
-  backgroundImage: 'url('+backgroundImg+')',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundAttachment: 'fixed',
@@ -18,16 +17,38 @@ let divStyle = {
   
 }
 
-export default () => (
-  <Layout>
-    <div id='mainBackground' style={divStyle}>
+export default (props) => (
+  <StaticQuery query={graphql`
+    query{
+      bgImg: file(relativePath: { eq: "rainier.jpg" }){
+        childImageSharp {
+          fluid(maxWidth: 1000){
+             ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `}
+  render={data => {
+  const imageData = data.bgImg.childImageSharp.fluid
+  return (
+    <BackgroundImage Tag="section"
+      fluid={imageData}
+      id='mainBackground'
+      style={divStyle}
+      backgroundColor={`#040e18`}
+      >
+    <Layout>
       <div id='main'>
-      <Navbar />
+        <Navbar />
         <div><About /></div>
         <div><Projects /></div>
         <div><Contact /></div>
         <Footer />
       </div>
-    </div>
   </Layout>
+  </BackgroundImage>
+  )
+  }}
+  />
 )
