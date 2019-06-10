@@ -4,6 +4,10 @@ import React from 'react'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
+let picStyles = {
+  border: '4px solid white',
+  borderRadius: '50%',
+}
 
 const About = (props) => (
   <StaticQuery query={graphql`
@@ -24,7 +28,7 @@ const About = (props) => (
       <div id='mainAbout'>
         <section className='aboutSection'>
           <section id='picSection'>
-            <Img className='profilePic' fluid={imageData} />
+            <Img className='profilePic' style={picStyles} fluid={imageData} />
           </section>
           <section id='textSection'>
             <h1>Chris Merritt</h1>
