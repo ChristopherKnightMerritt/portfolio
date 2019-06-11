@@ -34,14 +34,7 @@ module.exports = {
         skills: 'React.js, Heroku, HTML, CSS, Consuming APIs',
         image: '1',
         link: 'https://station-location.herokuapp.com/'
-      },
-      {
-        title: 'Panamapping',
-        description: 'Using ArcGis to map out the different forest types in the Panama jungle.',
-        skills: 'ArcGIS Pro, ArcGIS Online',
-        image: '0',
-        link: 'http://univredlands.maps.arcgis.com/apps/webappviewer/index.html?id=020a29e6d7f2426a970b32630c12eeb8'
-      },
+      }
     ]
   },
   plugins: [

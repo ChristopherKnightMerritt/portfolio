@@ -149,11 +149,18 @@ p{
   width: 3em;
   transition: 0.3s;
   margin-bottom: 1em;
+  padding:  0.5em;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 #contact img:hover{
   height: 3.5em;
   width: 3.5em;
   margin-bottom: 0em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .nestContainer{
